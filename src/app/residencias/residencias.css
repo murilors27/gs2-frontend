@@ -1,0 +1,42 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .residencia-form label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .residencia-form input, .residencia-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .residencias-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .residencia-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 45%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .residencia-card h2 {
+    margin-top: 0;
+  }
+  
+  .actions button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  

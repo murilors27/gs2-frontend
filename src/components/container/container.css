@@ -1,0 +1,11 @@
+.container {
+  background-color: #246b26;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-attachment: scroll;
+  }
+}

@@ -1,0 +1,25 @@
+.text_footer {
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .text_footer {
+    font-size: 18px;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .text_footer {
+    font-size: 16px;
+    padding: 0.5rem 0;
+  }
+}

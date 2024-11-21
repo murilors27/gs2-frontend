@@ -1,0 +1,49 @@
+.criadores_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: #fafafa;
+  color: #333;
+  min-height: 100vh;
+}
+
+.criadores_title {
+  color: #4caf50;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.criadores_subtitle {
+  font-size: 1.25rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .criadores_title {
+    font-size: 2.5rem;
+  }
+
+  .criadores_subtitle {
+    font-size: 1.125rem;
+  }
+}

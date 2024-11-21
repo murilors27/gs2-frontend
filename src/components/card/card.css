@@ -1,0 +1,89 @@
+.card {
+  background-color: rgb(7, 46, 7);
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em;
+  width: 15rem;
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 140px;
+  height: 332px;
+}
+
+.img-criador {
+  border-radius: 30%;
+  width: 135px;
+  height: 135px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.card_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.link-to-repository {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card__link:hover{
+  opacity: 0.7;
+}
+
+.text_footer {
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.card__link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 12rem;
+  }
+
+  .img-criador {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .criadores_main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 15rem;
+    margin: 1rem 0;
+  }
+
+  .img-criador {
+    width: 80%;
+    height: auto;
+  }
+}

@@ -1,0 +1,92 @@
+.nav_container {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 93px;
+  padding: 0 4rem;
+  padding-top: 0.8rem;
+}
+
+.nav_container_title {
+  text-align: center;
+  color: white;
+  background-image: none;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 80%;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav_container_title:hover{
+  opacity: 0.7;
+}
+
+.nav_container_options {
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 80%;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav_container_options:hover, .logout-button:hover{
+  transform: scale(1.09);
+  font-weight: 700;
+}
+
+.logout-button {
+  border: none;
+  color: white;
+  padding: 0;
+  background: none;
+  background-color: transparent;
+  font-size: 25px;
+  letter-spacing: 0.06em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .nav_container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav_container_title {
+    font-size: 30px;
+  }
+
+  .nav_container_options,
+  .logout-button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav_container_title {
+    font-size: 25px;
+  }
+
+  .nav_container_options,
+  .logout-button {
+    font-size: 15px;
+  }
+}

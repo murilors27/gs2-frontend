@@ -1,0 +1,23 @@
+.home-button {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  margin: 2rem;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home-button:hover {
+  opacity: 0.8;
+  transform: scale(1.09);
+}
+
+@media (max-width: 860px) {
+  .home-button {
+    margin: 1rem;
+  }
+}
