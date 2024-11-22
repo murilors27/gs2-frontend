@@ -1,28 +1,57 @@
 import axios from "axios";
 
-// Configuração base do Axios
+// Criando uma instância do Axios
 const api = axios.create({
-  baseURL: "http://localhost:8080", // Substitua pela URL da sua API
+  baseURL: "http://localhost:8080",
+  withCredentials: true,
 });
 
-// Função para cadastrar uma residência
+// Funções para interagir com o backend
+
 export const cadastrarResidencia = async (residencia: any) => {
-  return await api.post("/residencias", residencia);
+  try {
+    const response = await api.post("/residencias", residencia);
+    return response.data;
+  } catch (error) {
+    console.error("Erro ao cadastrar residência:", error);
+    throw error;
+  }
 };
 
-// Função para buscar todas as residências
 export const buscarResidencias = async () => {
-  return await api.get("/residencias");
+  try {
+    const response = await api.get("/residencias");
+    console.log("Resposta completa da API:", response);
+    console.log("Resposta da API (dados):", response.data);
+    return response;
+  } catch (error) {
+    console.error("Erro ao buscar residências:", error);
+    throw error;
+  }
 };
 
-// Função para cadastrar um histórico de energia
+
+
 export const cadastrarHistorico = async (historico: any) => {
-  return await api.post("/historico-energia", historico);
+  try {
+    const response = await api.post("/historico-energia", historico);
+    return response.data;
+  } catch (error) {
+    console.error("Erro ao cadastrar histórico:", error);
+    throw error;
+  }
 };
 
-// Função para buscar históricos por residência
 export const buscarHistoricoPorResidencia = async (idResidencia: number) => {
-  return await api.get(`/historico-energia/${idResidencia}`);
+  try {
+    console.log("Buscando histórico para a residência:", idResidencia);
+    const response = await api.get(`/historico-energia/residencia/${idResidencia}`);
+    console.log("Resposta da API (dados):", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("Erro ao buscar histórico:", error);
+    throw error;
+  }
 };
 
 export default api;

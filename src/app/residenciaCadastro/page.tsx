@@ -44,9 +44,12 @@ const CadastroResidencia: React.FC = () => {
   };
 
   return (
-    <Container img="cadastro-bg.jpg"> {/* Adicione uma imagem específica */}
+    <Container img="cadastro-bg.jpg">
       <section className="cadastro_section">
         <h1>Cadastrar Residência</h1>
+        <p className="cadastro-description">Cadastre aqui sua residência para começar a monitorar a produção e o consumo de energia.
+      Este cadastro é essencial para que você possa acompanhar de forma detalhada o desempenho
+      energético de sua casa, incluindo geração de energia renovável e limites de consumo.</p>
         <form className="cadastro-form" onSubmit={handleSubmit}>
           <input
             type="text"

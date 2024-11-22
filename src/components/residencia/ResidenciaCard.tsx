@@ -1,6 +1,7 @@
 import React from "react";
 
 interface ResidenciaProps {
+  idResidencia: number;
   nomeResponsavel: string;
   endereco: string;
   capacidadeGeracao: number;
@@ -9,15 +10,26 @@ interface ResidenciaProps {
 }
 
 const ResidenciaCard: React.FC<ResidenciaProps> = ({
+  idResidencia,
   nomeResponsavel,
   endereco,
   capacidadeGeracao,
   tipoFonte,
   limiteConsumo,
 }) => {
+  console.log({
+    idResidencia,
+    nomeResponsavel,
+    endereco,
+    capacidadeGeracao,
+    tipoFonte,
+    limiteConsumo,
+  });
+  
   return (
     <div className="residencia-card">
-      <h3>{nomeResponsavel}</h3>
+      <h2>{nomeResponsavel}</h2>
+      <p>ID da Residência: {idResidencia}</p>
       <p>Endereço: {endereco}</p>
       <p>Capacidade de Geração: {capacidadeGeracao} kWh</p>
       <p>Tipo de Fonte: {tipoFonte}</p>

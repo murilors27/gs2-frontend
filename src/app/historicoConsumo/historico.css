@@ -1,60 +1,81 @@
-/* Estilo global da página */
-body {
-    font-family: Arial, sans-serif;
-    color: #333; /* Cor de texto padrão */
-    padding: 20px;
+.historico_section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2b4d28, #4caf50);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
-/* Título da página */
-h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4caf50; /* Cor verde */
+.historico_section h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Estilos para a seção de resumo */
-.relatorioResumo {
-    background: linear-gradient(135deg, #296324, #4caf50); /* Fundo suave de cor verde claro */
-    padding: 2rem;
-    margin: 5rem;
-    border-radius: 8px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* Título do resumo */
-h2 {
-    font-size: 1.8rem;
-    color: white;
-    margin-bottom: 1rem;
+.search-box input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 200px;
 }
 
-/* Estilos para a tabela */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.search-box button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background-color: #58c75b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Cabeçalho da tabela */
-th {
-    background-color: rgb(255, 249, 249); /* Cor de fundo para os cabeçalhos */
-    color: rgb(56, 56, 56); /* Texto branco */
-    padding: 10px;
-    text-align: left;
+.search-box button:hover {
+  background-color: #42a747;
 }
 
-/* Estilos para as células da tabela */
-td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+.historico-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-/* Linhas de dados na tabela */
-tr:nth-child(even) {
-    background-color: #f2f2f2; /* Fundo alternado nas linhas */
+.historico-card {
+  background-color: #fff;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.historico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.historico-card h2 {
+  font-size: 1.5rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.historico-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
 }

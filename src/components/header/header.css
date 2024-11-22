@@ -1,4 +1,5 @@
 .nav_container {
+  background-color: #409443;
   display: flex;
   gap: 3rem;
   justify-content: space-between;

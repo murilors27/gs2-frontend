@@ -2,10 +2,8 @@
 
 import "./header.css";
 import Link from "next/link";
-import { useUser } from "@/context/UserContext";
 
 const Header = () => {
-  const { logout, user } = useUser();
 
   return (
     <header className="nav_container">
@@ -18,6 +16,9 @@ const Header = () => {
         </Link>
         <Link className="nav_container_options" href="/residenciaCadastro">
           CADASTRE SUA RESIDÊNCIA
+        </Link>
+        <Link className="nav_container_options" href="/cadastroHistorico">
+          CADASTRAR HISTÓRICO
         </Link>
       </nav>
     </header>

@@ -1,4 +1,3 @@
-/* Estilo base */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -8,7 +7,6 @@ body {
   color: #eaeaea;
 }
 
-/* Título */
 h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -17,7 +15,6 @@ h1 {
   margin: 2rem 0;
 }
 
-/* Lista de residências */
 .residencia-list {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +28,6 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Cartão */
 .residencia-card {
   background-color: #fff;
   width: 300px;
@@ -46,21 +42,18 @@ h1 {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Título do cartão */
 .residencia-card h2 {
   font-size: 1.5rem;
   color: #4caf50;
   margin-bottom: 1rem;
 }
 
-/* Texto */
 .residencia-card p {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
 }
 
-/* Botão */
 .residencia-card .button {
   display: block;
   text-align: center;
@@ -79,7 +72,6 @@ h1 {
   background-color: #388e3c;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .residencia-list {
     padding: 1rem;

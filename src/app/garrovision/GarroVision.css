@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
   padding: 3rem;
-  background-color: #f0f4f1; /* Fundo mais suave */
+  background-color: #f0f4f1;
   color: #333;
 }
 
 .section_title {
-  color: #4caf50; /* Verde para dar ênfase à sustentabilidade */
+  color: #4caf50;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;

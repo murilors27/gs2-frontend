@@ -5,20 +5,20 @@ import "react-toastify/dist/ReactToastify.css";
 import UserProvider from "@/context/UserContext";
 
 export const metadata: Metadata = {
-  title: "OpalaVision",
-  description: "O futuro da detecção de problemas automotivos ao seu alcance",
+  title: "GarroVision",
+  description: "Soluções inovadoras em energia sustentável e renovável para um futuro melhor.",
   keywords: [
-    "OpalaVision",
-    "oficina",
-    "oficina de carros",
-    "carros",
-    "manuntenção de carros",
-    "detecção problemas",
-    "problemas automotivos",
+    "GarroVision",
+    "energia sustentável",
+    "sustentabilidade",
+    "energias renováveis",
+    "tecnologia sustentável",
+    "futuro sustentável",
+    "eficiência energética",
   ],
   openGraph: {
-    title: "OpalaVision",
-    description: "O futuro da detecção de problemas automotivos ao seu alcance",
+    title: "GarroVision",
+    description: "Soluções inovadoras em energia sustentável e renovável para um futuro melhor.",
   },
   robots: {
     index: true,

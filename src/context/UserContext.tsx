@@ -1,40 +1,24 @@
 "use client";
 
-import { LoginProps } from "@/types/login";
-import { createContext, ReactNode, useContext, useState } from "react";
-import { toast } from "react-toastify";
+import { createContext, ReactNode, useContext } from "react";
 
-type UserContextProps = {
-  login: (data: LoginProps) => void;
-  logout: () => void;
-  user: LoginProps | null;
+type GenericContextProps = {
 };
 
-const UserContext = createContext<UserContextProps | null>(null);
+const GenericContext = createContext<GenericContextProps | null>(null);
 
-export function useUser() {
-  const context = useContext(UserContext);
+export function useGeneric() {
+  const context = useContext(GenericContext);
   if (!context) {
-    throw new Error("useUser deve ser usado dentro de um UserProvider");
+    throw new Error("useGeneric deve ser usado dentro de um GenericProvider");
   }
   return context;
 }
 
-export default function UserProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<LoginProps | null>(null);
-
-  const login = (userData: LoginProps) => {
-    setUser(userData);
-  };
-
-  const logout = () => {
-    setUser(null);
-    toast.error("Logout realizado!")
-  };
-
+export default function GenericProvider({ children }: { children: ReactNode }) {
   return (
-    <UserContext.Provider value={{ user, login, logout }}>
+    <GenericContext.Provider value={{}}>
       {children}
-    </UserContext.Provider>
+    </GenericContext.Provider>
   );
 }
