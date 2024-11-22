@@ -1,42 +1,101 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Estilo Geral para a Página de Residências */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Título da Página */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2b4d28;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Container de Residências */
+.residencia-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos Cartões de Residências */
+.residencia-card {
+  background-color: #fff;
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.residencia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos dos Cartões */
+.residencia-card h2 {
+  font-size: 1.5rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+/* Texto dos Cartões */
+.residencia-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Botões nos Cartões */
+.residencia-card .button {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.residencia-card .button:hover {
+  background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .residencia-list {
+    padding: 1rem;
   }
-  
-  .residencia-form label {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  .residencia-form input, .residencia-form select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-  }
-  
-  .residencias-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  
+
   .residencia-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    width: 45%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
   }
-  
-  .residencia-card h2 {
-    margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
   }
-  
-  .actions button {
-    margin: 5px;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
+
+  .residencia-card {
+    padding: 1rem;
   }
-  
+}

@@ -1,11 +1,18 @@
-import "./footer.css";
+import "./container.css";
 
-const Footer = () => {
+type ContainerProps = {
+  children: React.ReactNode;
+  img: string;
+};
+
+const Container: React.FC<ContainerProps> = ({ children, img }) => {
   return (
-    <footer className="text_footer">
-      © 2024 - Todos os Direitos Reservados.
-    </footer>
+    <main className="container">
+      <section className="container-content">
+        {children}
+      </section>
+    </main>
   );
 };
 
-export default Footer;
+export default Container;

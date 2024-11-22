@@ -1,37 +1,27 @@
-import React from 'react';
+import React from "react";
 
-interface ResidenciaCardProps {
-  residencia: {
-    id: number;
-    nomeResponsavel: string;
-    endereco: string;
-    capacidadeGeracao: number;
-    tipoFonte: string;
-    status: string;
-  };
+interface ResidenciaProps {
+  nomeResponsavel: string;
+  endereco: string;
+  capacidadeGeracao: number;
+  tipoFonte: string;
+  limiteConsumo: number;
 }
 
-const ResidenciaCard: React.FC<ResidenciaCardProps> = ({ residencia }) => {
+const ResidenciaCard: React.FC<ResidenciaProps> = ({
+  nomeResponsavel,
+  endereco,
+  capacidadeGeracao,
+  tipoFonte,
+  limiteConsumo,
+}) => {
   return (
     <div className="residencia-card">
-      <h2>{residencia.nomeResponsavel}</h2>
-      <p>
-        <strong>Endereço:</strong> {residencia.endereco}
-      </p>
-      <p>
-        <strong>Capacidade:</strong> {residencia.capacidadeGeracao} kWh
-      </p>
-      <p>
-        <strong>Fonte:</strong> {residencia.tipoFonte}
-      </p>
-      <p>
-        <strong>Status:</strong> {residencia.status}
-      </p>
-      <div className="actions">
-        <button>Editar</button>
-        <button>Excluir</button>
-        <button>Detalhes</button>
-      </div>
+      <h3>{nomeResponsavel}</h3>
+      <p>Endereço: {endereco}</p>
+      <p>Capacidade de Geração: {capacidadeGeracao} kWh</p>
+      <p>Tipo de Fonte: {tipoFonte}</p>
+      <p>Limite de Consumo: {limiteConsumo} kWh</p>
     </div>
   );
 };

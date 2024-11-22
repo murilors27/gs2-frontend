@@ -1,31 +1,28 @@
-import { LoginProps } from "@/types/login";
 import axios from "axios";
-import { useRouter } from "next/router";
-import { toast } from "react-toastify";
 
-type apiError = {
-  erro: string;
-};
-
-export const axiosInstance = axios.create({
-  baseURL: "http://127.0.0.1:5000/api/usuarios",
-  headers: {
-    "Content-Type": "application/json",
-  },
+// Configuração base do Axios
+const api = axios.create({
+  baseURL: "http://localhost:8080", // Substitua pela URL da sua API
 });
 
-export async function createUser(data: LoginProps) {
-  try {
-    await axiosInstance.post("", data);
-  } catch (error) {
-    throw new Error("Erro ao cadastrar usuário");
-  }
-}
+// Função para cadastrar uma residência
+export const cadastrarResidencia = async (residencia: any) => {
+  return await api.post("/residencias", residencia);
+};
 
-export async function validateUser(data: LoginProps) {
-  try {
-    await axiosInstance.post("/login", data);
-  } catch (error) {
-    throw new Error("Usuário ou senha incorretos");
-  }
-}
+// Função para buscar todas as residências
+export const buscarResidencias = async () => {
+  return await api.get("/residencias");
+};
+
+// Função para cadastrar um histórico de energia
+export const cadastrarHistorico = async (historico: any) => {
+  return await api.post("/historico-energia", historico);
+};
+
+// Função para buscar históricos por residência
+export const buscarHistoricoPorResidencia = async (idResidencia: number) => {
+  return await api.get(`/historico-energia/${idResidencia}`);
+};
+
+export default api;

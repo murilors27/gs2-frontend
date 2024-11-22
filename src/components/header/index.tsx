@@ -16,8 +16,8 @@ const Header = () => {
         <Link className="nav_container_options" href="/criadores">
           CRIADORES
         </Link>
-        <Link className="nav_container_options" href="/residencias">
-          NOSSAS FERRAMENTAS
+        <Link className="nav_container_options" href="/residenciaCadastro">
+          CADASTRE SUA RESIDÊNCIA
         </Link>
       </nav>
     </header>

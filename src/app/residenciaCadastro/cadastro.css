@@ -1,0 +1,107 @@
+/* Estilo base */
+body {
+  background-color: #292828; /* Fundo claro para a página fora do container */
+  color: #333333; /* Texto escuro */
+}
+
+.cadastro-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #2b4d28, #4caf50); /* Fundo verde do container */
+  color: #eaeaea; /* Texto claro */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cadastro-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #f4f4f4;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cadastro-form input,
+.cadastro-form select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.cadastro-form input::placeholder,
+.cadastro-form select {
+  color: #a0a0a0;
+}
+
+.cadastro-form input:focus,
+.cadastro-form select:focus {
+  outline: none;
+  border-color: #4caf50; /* Cor de foco */
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.6);
+}
+
+.cadastro-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #4bc54f; /* Verde minimalista */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  margin: 0 auto; /* Alinha o botão no centro */
+}
+
+.cadastro-form button:hover {
+  background-color: #388e3c;
+}
+
+.view-residences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens */
+  gap: 1rem;
+  margin-top: 2rem; /* Dá um espaçamento superior */
+}
+
+.view-residences-button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #4bc54f; /* Verde minimalista */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  margin: 0 auto; /* Alinha o botão no centro */
+}
+
+.view-residences-button:hover {
+  background-color: #388e3c;
+}
+
+.view-residences-container h2 {
+  font-size: 1.5rem;
+  color: #333333; /* Texto escuro */
+}
+
+.view-residences-container p {
+  color: #666666; /* Texto cinza claro */
+  font-size: 1rem;
+  text-align: center;
+}

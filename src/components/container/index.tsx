@@ -15,7 +15,7 @@ const Container: React.FC<ContainerProps> = ({ children, img }) => {
       <section className="container-content">
         <Header />
         {children}
-        <Footer />
+
       </section>
     </main>
   );
