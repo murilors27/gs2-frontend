@@ -35,3 +35,9 @@ O Sistema de Cadastro e Histórico de Residências é uma aplicação que permit
 **Thiago Garcia** - [GitHub](https://github.com/thiago-tonato)
 
 **Ian Madeira** - [GitHub](https://github.com/IanMadeira)
+
+## Links
+
+* Vercel: https://garrovision.vercel.app/
+* Vídeo (Youtube): https://youtu.be/0tdb4s7e98Q
+* Github: https://github.com/murilors27/gs2-frontend
