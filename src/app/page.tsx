@@ -14,7 +14,7 @@ export default function Home() {
           <p className="description">
             Uma plataforma inteligente para gerenciar e distribuir energia renovável, com foco em eficiência e sustentabilidade.
           </p>
-          <Link href="#features" className="cta_button">
+          <Link href="/garrovision" className="cta_button">
             Conheça as Funcionalidades
           </Link>
 

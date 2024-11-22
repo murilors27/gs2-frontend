@@ -1,23 +1,35 @@
-import Footer from "../footer";
-import Header from "../header";
-import "./container.css";
+// container.tsx
+import Link from "next/link";
+import "./container.css"; // Certifique-se de ajustar os estilos, se necessário.
 
-type ContainerProps = {
+interface ContainerProps {
+  img?: string;  // Tornando img opcional
   children: React.ReactNode;
-  img: string;
-};
+}
 
 const Container: React.FC<ContainerProps> = ({ children, img }) => {
   return (
-    <main
-      className="container"
-    >
-      <section className="container-content">
-        <Header />
-        {children}
+    <div className="container">
+      {/* Header */}
+      <header className="header">
+        <nav className="navbar">
+          <Link className="navbar-title" href="/">GARROVISION</Link>
+          <div className="navbar-right">
+            <Link className="navbar-options" href="/criadores">CRIADORES</Link>
+            <Link className="navbar-options" href="/residenciaCadastro">CADASTRAR RESIDÊNCIA</Link>
+            <Link className="navbar-options" href="/historicoConsumo">VERIFICAR CONSUMO</Link>
+          </div>
+        </nav>
+      </header>
 
-      </section>
-    </main>
+      {/* Main Content */}
+      <main className="content">{children}</main>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>© 2024 Garrovision - Todos os Direitos Reservados</p>
+      </footer>
+    </div>
   );
 };
 

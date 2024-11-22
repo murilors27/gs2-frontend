@@ -1,37 +1,37 @@
-/* Estilo Geral para a Página de Residências */
+/* Estilo base */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: rgb(252, 245, 234);
+  color: #eaeaea;
 }
 
-/* Título da Página */
+/* Título */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #2b4d28;
+  color: #4caf50;
   text-align: center;
   margin: 2rem 0;
 }
 
-/* Container de Residências */
+/* Lista de residências */
 .residencia-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  background: white;
+  background: linear-gradient(135deg, #2b4d28, #4caf50);
   border-radius: 10px;
   margin: 0 auto;
   max-width: 1200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo dos Cartões de Residências */
+/* Cartão */
 .residencia-card {
   background-color: #fff;
   width: 300px;
@@ -46,21 +46,21 @@ h1 {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Títulos dos Cartões */
+/* Título do cartão */
 .residencia-card h2 {
   font-size: 1.5rem;
   color: #4caf50;
   margin-bottom: 1rem;
 }
 
-/* Texto dos Cartões */
+/* Texto */
 .residencia-card p {
   font-size: 1rem;
-  color: #555;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Botões nos Cartões */
+/* Botão */
 .residencia-card .button {
   display: block;
   text-align: center;
@@ -76,7 +76,7 @@ h1 {
 }
 
 .residencia-card .button:hover {
-  background-color: #45a049;
+  background-color: #388e3c;
 }
 
 /* Responsividade */
@@ -92,7 +92,7 @@ h1 {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .residencia-card {
